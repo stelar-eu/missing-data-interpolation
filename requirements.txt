@@ -1,1 +1,4 @@
 minio
+pandas
+numpy
+openpyxl

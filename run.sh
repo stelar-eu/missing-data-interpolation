@@ -48,7 +48,7 @@ echo "[STELAR INFO] Performing cURL to the KLMS API to propagate output..."
 response=$(curl -s -X POST -H "Content-Type: application/json" "$endpoint_url/api/v2/task/$id/$signature/output" -d "$output_json")
 
 echo "[STELAR INFO] The output request to the KLMS API returned:"
-echo "$response"
+echo "$response" | jq 'del(.help)'
 printf "\n"
 
 # Check if the second curl request was successful
