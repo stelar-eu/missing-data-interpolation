@@ -1,6 +1,6 @@
 
 DOCKER=docker
-IMGTAG=petroud/mdi:latest
+IMGTAG=img.stelar.gr/stelar/missing-data-interpolation:latest
 IMGPATH=.
 DOCKERFILE=$(IMGPATH)/Dockerfile
 
