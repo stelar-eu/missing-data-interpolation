@@ -68,9 +68,10 @@ At runtime the tool expects the following, translated by the API, JSON:
 }
 ```
 ### `input`
-The tool expect two inputs during runtime that are being utilized in conjuction during the calculation:
-- `coords_file` (XLSX): An Excel sheet holding daily observations for each station (BARB, SCHI, MOND, TORR) across four variables—mean, max, min temperature and rainfall—where some cells are blank.
-- `meteo_file` (XLSX): A small Excel table that maps every station code to its latitude and longitude, supplying the distances the IDW algorithm needs to weight neighbouring stations.
+The tool expect two inputs (optionally three) during runtime that are being utilized in conjuction during the calculation:
+- `coords_file` (XLSX): A small Excel table that maps every station code to its latitude and longitude, supplying the distances the IDW algorithm needs to weight neighbouring stations.
+- `meteo_file` (XLSX):  An Excel sheet holding daily observations for each station (BARB, SCHI, MOND, TORR) across four variables—mean, max, min temperature and rainfall—where some cells are blank.
+- `ground_truth` (XLSX), *optional*:  An Excel sheet holding daily observations for each station (BARB, SCHI, MOND, TORR) across four variables—mean, max, min temperature and rainfall—where with complete data.
 
 
 ### `output`
