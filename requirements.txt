@@ -2,3 +2,4 @@ minio
 pandas
 numpy
 openpyxl
+scikit-learn
