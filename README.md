@@ -17,6 +17,9 @@ An example spec for executing an autonomous instance of MDI (Missing Data Interp
         ],
         "coords_file":[
             "87668a7e-8d88-4074-a7f2-1a502f40c659"
+        ],
+        "ground_truth":[
+            "1e746272-b000-4fc8-9a83-c414f6651082"
         ]
     },
     "datasets": {
@@ -47,6 +50,9 @@ At runtime the tool expects the following, translated by the API, JSON:
             ],
             "meteo_file": [
                 "s3://abaco-bucket/MISSING_DATA/DATI_NETSENS_TORREVILLA.xlsx"
+            ],
+            "ground_truth":[
+                "s3://abaco-bucket/MISSING_DATA/DATI_NETSENS_TORREVILLA_COMPLET.xlsx"
             ]
         },
         "minio": {
